@@ -137,6 +137,10 @@
         {
             "name": "PayrollModule",
             "npm": "@openimis/fe-payroll@https://github.com/openimis/openimis-fe-payroll_js#develop"
+        },
+        {
+            "name": "ClaimGuardModule",
+            "npm": "fe-claimguard@https://github.com/chaldeastudios/openimis-claimguard-module#main"
         }
     ]
 }
