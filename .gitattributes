@@ -1,0 +1,6 @@
+# Windows Git defaults to checking out text files with CRLF line endings,
+# which breaks any #!/bin/bash script when it's copied into a Linux
+# container (bash chokes on the stray \r -- "set -e\r" reads as an invalid
+# flag, "do\r" breaks loop syntax). Force LF for anything actually executed
+# as a script, on every platform, regardless of local core.autocrlf.
+*.sh text eol=lf
